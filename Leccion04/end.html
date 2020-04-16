@@ -17,31 +17,31 @@
     <body>
         <div id="app" class="container">
             <div class="welcome">
-                <h1>Bienvenido {{ name }}</h1>
-
-                <button class="btn">Saludar</button>
+                <h1 v-text="name + ' : ' + reversedName">
+                </h1>
             </div>
 
             <footer class="footer">
-                <p>&copy; 2017 Styde.net.</p>
+                <p>&copy; 2020 Juan Cid.</p>
             </footer>
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
-        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-
         <script>
             var vm = new Vue({
                 el: ".welcome",
                 data: {
-                    name: 'Juan'
-                }
+                    name: 'Juan',
+                    project: 'Home'
+                },
+                computed: {
+                    reversedName: function () {
+                        return this.name.split('').reverse().join('');
+                    }
+                },
             });
 
-            $('button').click(function () {
-                $('h1').text('Hola, {{ name }}');
-            });
         </script>
     </body>
 </html>
