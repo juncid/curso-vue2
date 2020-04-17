@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Curso de Vue 2">
+    <meta name="author" content="Juan Cid">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Curso de Vue 2 - Styde.net - Capitulo 09</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app" class="container">
+    <div class="welcome">
+        Bienvenido {{ name | upper | title}}
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2020 Juan Cid.</p>
+    </footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<script>
+    let vm = new Vue({
+        el: "#app",
+        data: {
+            name: 'Juan'
+        },
+        filters: {
+            upper: function (value) {
+                return value.toUpperCase();
+            },
+            title: function (value) {
+                return 'Mr. ' + value;
+            }
+        }
+    });
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
