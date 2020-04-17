@@ -21,7 +21,7 @@
     <ul class="list-group tasks">
         <li v-for="task in tasks" class="list-group-item"
         :class="{editing: task.editing, completed: !task.pending}">
-            <a href="#">
+            <a @click="toggleStatus(task)">
                 <span class="glyphicon "
                       aria-hidden="true"
                       :class="task.pending ? 'glyphicon-unchecked' : 'glyphicon-check'"></span>
@@ -31,7 +31,7 @@
                 <span class="description">{{ task.description }}</span>
 
                 <div>
-                    <a href="#">
+                    <a @click="editTask(task)">
                     <span class="glyphicon glyphicon-edit" aria-hidden="true">
                     </span>
                     </a>
@@ -43,14 +43,14 @@
             </template>
 
             <template v-else>
-                <input  type="text" v-model="task.description">
+                <input  type="text" v-model="draft">
 
                 <div>
-                    <a href="#">
+                    <a @click="updateTask(task)">
                     <span class="glyphicon glyphicon-ok" aria-hidden="true">
                     </span>
                     </a>
-                    <a href="#">
+                    <a @click="discardTask(task)">
                     <span class="glyphicon glyphicon-remove" aria-hidden="true">
                     </span>
                     </a>
@@ -77,6 +77,7 @@
         el: '#app',
         data: {
             new_task: '',
+            draft: '',
             tasks: [
                 {
                     description: 'Aprender Vue.js',
@@ -86,7 +87,7 @@
                 {
                     description: 'Subscribirse a Styde.net',
                     pending: true,
-                    editing: true
+                    editing: false
                 },
                 {
                     description: 'Grabar lección de Vue',
@@ -104,6 +105,23 @@
                 });
 
                 this.new_task = '';
+            },
+            toggleStatus: function (task) {
+                task.pending = !task.pending;
+            },
+            editTask: function (task) {
+                this.tasks.forEach(function (task) {
+                    task.editing=false;
+                });
+                this.draft = task.description;
+                task.editing = true;
+            },
+            updateTask: function (task) {
+                task.description = this.draft;
+                task.editing = false;
+            },
+            discardTask: function (task) {
+                task.editing = false;
             }
         }
     });
