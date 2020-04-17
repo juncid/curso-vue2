@@ -57,40 +57,11 @@
                 </div>
             </template>
 
-
-
-
-
         </li>
-
-        <!---
-        <li class="list-group-item editing">
-            <a href="#"><span class="glyphicon glyphicon-unchecked" aria-hidden="true"></span></a>
-            <input type="text" value="Subscribirse en Styde">
-
-
-        </li>
-
-        <li class="list-group-item completed">
-            <a href="#"><span class="glyphicon glyphicon-check" aria-hidden="true"></span></a>
-            <span class="description">Crear una API</span>
-
-            <div>
-                <a href="#">
-                    <span class="glyphicon glyphicon-edit" aria-hidden="true">
-                    </span>
-                </a>
-                <a href="#">
-                    <span class="glyphicon glyphicon-trash" aria-hidden="true">
-                    </span>
-                </a>
-            </div>
-        </li>
-        -->
     </ul>
 
-    <form class="new-task-form">
-        <input type="text" class="form-control">
+    <form @submit.prevent="createTask" class="new-task-form">
+        <input v-model="new_task" type="text" class="form-control">
         <button class="btn btn-primary">Crear tarea</button>
     </form>
 
@@ -105,6 +76,7 @@
     let vm = new Vue({
         el: '#app',
         data: {
+            new_task: '',
             tasks: [
                 {
                     description: 'Aprender Vue.js',
@@ -122,6 +94,17 @@
                     editing: false
                 }
             ]
+        },
+        methods: {
+            createTask: function () {
+                this.tasks.push({
+                    description: this.new_task,
+                    pending: true,
+                    editing: false
+                });
+
+                this.new_task = '';
+            }
         }
     });
 </script>
