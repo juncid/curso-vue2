@@ -22,9 +22,7 @@
         <li v-for="(task, index) in tasks" class="list-group-item"
         :class="{editing: task.editing, completed: !task.pending}">
             <a @click="toggleStatus(task)">
-                <span class="glyphicon "
-                      aria-hidden="true"
-                      :class="task.pending ? 'glyphicon-unchecked' : 'glyphicon-check'"></span>
+                <app-icon :img="task.pending ? 'unchecked' : 'check'"></app-icon>
             </a>
 
             <template v-if="!task.editing">
@@ -32,12 +30,10 @@
 
                 <div>
                     <a @click="editTask(task)">
-                    <span class="glyphicon glyphicon-edit" aria-hidden="true">
-                    </span>
+                        <app-icon img="edit"></app-icon>
                     </a>
                     <a @click="deleteTask(index)">
-                    <span class="glyphicon glyphicon-trash" aria-hidden="true">
-                    </span>
+                        <app-icon img="trash"></app-icon>
                     </a>
                 </div>
             </template>
@@ -47,12 +43,10 @@
 
                 <div>
                     <a @click="updateTask(task)">
-                    <span class="glyphicon glyphicon-ok" aria-hidden="true">
-                    </span>
+                        <app-icon img="ok"></app-icon>
                     </a>
                     <a @click="discardTask(task)">
-                    <span class="glyphicon glyphicon-remove" aria-hidden="true">
-                    </span>
+                        <app-icon img="remove"></app-icon>
                     </a>
                 </div>
             </template>
@@ -74,6 +68,16 @@
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 <script>
+    Vue.component('app-icon', {
+        template: '<span :class="cssClasses" aria-hidden="true"></span>',
+        props: ['img'],
+        computed: {
+            cssClasses: function () {
+                return 'glyphicon glyphicon-'+this.img;
+            }
+        }
+    });
+
     let vm = new Vue({
         el: '#app',
         data: {

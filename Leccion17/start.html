@@ -59,7 +59,7 @@
 
         </li>
     </ul>
-    <button class="btn btn-success m-bottom" @click="deleteCompleted">Eliminar tareas completadas</button>
+    <button class="btn btn-success" @click="deleteCompleted">Eliminar tareas completadas</button>
     <br>
     <form @submit.prevent="createTask" class="new-task-form">
         <input v-model="new_task" type="text" class="form-control">

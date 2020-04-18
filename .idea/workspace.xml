@@ -12,7 +12,29 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Leccion17/end.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="27" column="43" lean-forward="true" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+              <folding>
+                <element signature="e#2671#4472#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Leccion12/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="428">
+              <caret line="55" column="1" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -23,6 +45,10 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Leccion11/end.html" />
         <option value="$PROJECT_DIR$/Leccion11/style.css" />
+        <option value="$PROJECT_DIR$/Leccion17/style.css" />
+        <option value="$PROJECT_DIR$/Leccion12/style.css" />
+        <option value="$PROJECT_DIR$/Leccion12/end.html" />
+        <option value="$PROJECT_DIR$/Leccion17/end.html" />
       </list>
     </option>
   </component>
@@ -44,6 +70,16 @@
               <item name="curso-vue2" type="b2602c69:ProjectViewProjectNode" />
               <item name="curso-vue2" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="curso-vue2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="curso-vue2" type="462c0819:PsiDirectoryNode" />
+              <item name="Leccion12" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="curso-vue2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="curso-vue2" type="462c0819:PsiDirectoryNode" />
+              <item name="Leccion17" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -53,13 +89,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Leccion11" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Leccion17" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\MSI\Documents\GitHub\curso-vue2\Leccion17" />
       <recent name="C:\Users\MSI\Documents\GitHub\curso-vue2\Leccion11" />
       <recent name="C:\Users\MSI\Documents\GitHub\curso-vue2" />
     </key>
@@ -88,12 +125,12 @@
       <updated>1587148078823</updated>
       <workItem from="1587148081220" duration="5047000" />
       <workItem from="1587163128596" duration="1980000" />
-      <workItem from="1587165290982" duration="3261000" />
+      <workItem from="1587165290982" duration="4341000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10288000" />
+    <option name="totallyTimeSpent" value="11368000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -106,9 +143,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="676" y="0" width="697" height="735" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.50682855" />
+      <window_info content_ui="combo" id="Project" order="1" weight="0.50682855" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.24886191" />
       <window_info anchor="bottom" id="GraphQL" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32478634" />
@@ -128,7 +166,7 @@
     </layout>
     <layout-to-restore>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.50682855" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.50682855" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.24886191" />
       <window_info anchor="bottom" id="GraphQL" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32478634" />
@@ -197,15 +235,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Leccion12/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        <state relative-caret-position="428">
+          <caret line="55" column="1" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Leccion12/end.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="56" column="22" lean-forward="true" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
+        <state relative-caret-position="268">
+          <caret line="61" column="43" selection-start-line="61" selection-start-column="43" selection-end-line="61" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Leccion17/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="55" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Leccion17/end.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="27" column="43" lean-forward="true" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+          <folding>
+            <element signature="e#2671#4472#0" />
+          </folding>
         </state>
       </provider>
     </entry>
