@@ -12,17 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Leccion11/end.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="56" column="22" lean-forward="true" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -53,11 +43,6 @@
             <path>
               <item name="curso-vue2" type="b2602c69:ProjectViewProjectNode" />
               <item name="curso-vue2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="curso-vue2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="curso-vue2" type="462c0819:PsiDirectoryNode" />
-              <item name="Leccion11" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -103,12 +88,12 @@
       <updated>1587148078823</updated>
       <workItem from="1587148081220" duration="5047000" />
       <workItem from="1587163128596" duration="1980000" />
-      <workItem from="1587165290982" duration="3166000" />
+      <workItem from="1587165290982" duration="3261000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10193000" />
+    <option name="totallyTimeSpent" value="10288000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -121,7 +106,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="676" y="0" width="697" height="735" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.50682855" />
@@ -194,7 +178,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Leccion11/start.html">
+    <entry file="file://$PROJECT_DIR$/Leccion12/start.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="85" lean-forward="true" selection-end-line="85" />
@@ -211,14 +195,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Leccion11/style.css">
+    <entry file="file://$PROJECT_DIR$/Leccion12/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="377">
           <caret line="53" selection-start-line="53" selection-end-line="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Leccion11/end.html">
+    <entry file="file://$PROJECT_DIR$/Leccion12/end.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
           <caret line="56" column="22" lean-forward="true" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
