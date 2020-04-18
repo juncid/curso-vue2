@@ -13,20 +13,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Leccion19/app.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Leccion20/app-end.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="58" column="26" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="26" />
+            <state relative-caret-position="250">
+              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Leccion19/end.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Leccion20/end.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+            <state relative-caret-position="247">
+              <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -57,6 +57,9 @@
         <option value="$PROJECT_DIR$/Leccion18/app.js" />
         <option value="$PROJECT_DIR$/Leccion19/end.html" />
         <option value="$PROJECT_DIR$/Leccion19/app.js" />
+        <option value="$PROJECT_DIR$/Leccion20/start.html" />
+        <option value="$PROJECT_DIR$/Leccion20/end.html" />
+        <option value="$PROJECT_DIR$/Leccion20/app-end.js" />
       </list>
     </option>
   </component>
@@ -81,7 +84,7 @@
             <path>
               <item name="curso-vue2" type="b2602c69:ProjectViewProjectNode" />
               <item name="curso-vue2" type="462c0819:PsiDirectoryNode" />
-              <item name="Leccion19" type="462c0819:PsiDirectoryNode" />
+              <item name="Leccion20" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -92,18 +95,18 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Leccion19" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Leccion20" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\MSI\Documents\GitHub\curso-vue2\Leccion19" />
+      <recent name="C:\Users\MSI\Documents\GitHub\curso-vue2\Leccion20" />
       <recent name="C:\Users\MSI\Documents\GitHub\curso-vue2" />
+      <recent name="C:\Users\MSI\Documents\GitHub\curso-vue2\Leccion19" />
       <recent name="C:\Users\MSI\Documents\GitHub\curso-vue2\Leccion18" />
       <recent name="C:\Users\MSI\Documents\GitHub\curso-vue2\Leccion17" />
-      <recent name="C:\Users\MSI\Documents\GitHub\curso-vue2\Leccion11" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -130,12 +133,12 @@
       <updated>1587148078823</updated>
       <workItem from="1587148081220" duration="5047000" />
       <workItem from="1587163128596" duration="1980000" />
-      <workItem from="1587165290982" duration="8564000" />
+      <workItem from="1587165290982" duration="9207000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15591000" />
+    <option name="totallyTimeSpent" value="16234000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -315,6 +318,13 @@
     <entry file="file://$PROJECT_DIR$/Leccion19/start.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/Leccion19/end.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Leccion19/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="389">
@@ -322,10 +332,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Leccion19/end.html">
+    <entry file="file://$PROJECT_DIR$/Leccion20/start.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        <state relative-caret-position="308">
+          <caret line="73" column="25" selection-start-line="73" selection-start-column="25" selection-end-line="73" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Leccion20/app-start.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Leccion20/end.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Leccion20/app-end.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
         </state>
       </provider>
     </entry>
