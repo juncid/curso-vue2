@@ -14,15 +14,34 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Leccion17/end.html">
+        <entry file="file://$PROJECT_DIR$/Leccion18/end.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="25" column="16" lean-forward="true" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+            <state relative-caret-position="20">
+              <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+              <folding>
+                <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Leccion18/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -37,6 +56,8 @@
         <option value="$PROJECT_DIR$/Leccion12/style.css" />
         <option value="$PROJECT_DIR$/Leccion12/end.html" />
         <option value="$PROJECT_DIR$/Leccion17/end.html" />
+        <option value="$PROJECT_DIR$/Leccion18/end.html" />
+        <option value="$PROJECT_DIR$/Leccion18/app.js" />
       </list>
     </option>
   </component>
@@ -61,12 +82,7 @@
             <path>
               <item name="curso-vue2" type="b2602c69:ProjectViewProjectNode" />
               <item name="curso-vue2" type="462c0819:PsiDirectoryNode" />
-              <item name="Leccion12" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="curso-vue2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="curso-vue2" type="462c0819:PsiDirectoryNode" />
-              <item name="Leccion17" type="462c0819:PsiDirectoryNode" />
+              <item name="Leccion18" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -77,16 +93,17 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Leccion17" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Leccion18" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\MSI\Documents\GitHub\curso-vue2\Leccion18" />
+      <recent name="C:\Users\MSI\Documents\GitHub\curso-vue2" />
       <recent name="C:\Users\MSI\Documents\GitHub\curso-vue2\Leccion17" />
       <recent name="C:\Users\MSI\Documents\GitHub\curso-vue2\Leccion11" />
-      <recent name="C:\Users\MSI\Documents\GitHub\curso-vue2" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -113,12 +130,12 @@
       <updated>1587148078823</updated>
       <workItem from="1587148081220" duration="5047000" />
       <workItem from="1587163128596" duration="1980000" />
-      <workItem from="1587165290982" duration="5541000" />
+      <workItem from="1587165290982" duration="7132000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12568000" />
+    <option name="totallyTimeSpent" value="14159000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -272,6 +289,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
           <caret line="25" column="16" lean-forward="true" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Leccion18/start.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Leccion18/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Leccion18/end.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+          <folding>
+            <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
