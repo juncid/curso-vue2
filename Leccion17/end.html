@@ -22,7 +22,7 @@
         <li v-for="(task, index) in tasks" class="list-group-item"
         :class="{editing: task.editing, completed: !task.pending}">
             <a @click="toggleStatus(task)">
-                <app-icon :img="task.pending ? 'unchecked' : 'check'"></app-icon>
+                <app-icon :img="task.pending ? 'unchecked': 'check'"></app-icon>
             </a>
 
             <template v-if="!task.editing">
