@@ -2,17 +2,16 @@
   <div id="app" class="container">
     <h2>Tareas</h2>
 
-    <ul class="list-group tasks">
-      <app-task v-for="(task, index) in tasks" :key="task.id"
-                :tasks="tasks" :task="task" :index="index" @remove="deleteTask">
-      </app-task>
-    </ul>
+    <app-task-list :tasks="tasks"></app-task-list>
+
     <button class="btn btn-success m-bottom" @click="deleteCompleted">Eliminar tareas completadas</button>
-    <br>
-    <form @submit.prevent="createTask" class="new-task-form">
-      <input v-model="new_task" type="text" class="form-control">
-      <button class="btn btn-primary">Crear tarea</button>
-    </form>
+
+    <h4>Crear:</h4>
+    <app-task-form @created="createTask"></app-task-form>
+
+    <h4>Imprimir</h4>
+    <app-task-form @created="alertTask"></app-task-form>
+
 
     <footer class="footer">
       <p>&copy; 2020 Juan Cid</p>
@@ -21,11 +20,14 @@
 </template>
 
 <script>
-  import Task from './Tasks/Tasks'
+
+  import TaskList from './TaskList/TaskList'
+  import TaskForm from './TaskForm/TaskForm'
 
   export default {
     components: {
-      'app-task': Task
+      'app-task-list': TaskList,
+      'app-task-form': TaskForm
     },
     created() {
       this.tasks.forEach((task, index) =>{
@@ -48,24 +50,28 @@
             description: 'Grabar lección de Vue',
             pending: false
           }
+        ],
+        tasks2: [
+          {
+            description: 'Aprender Vue 2',
+            pending: true
+          },
+          {
+            description: 'Subscribirse a Styde',
+            pending: true
+          }
         ]
       }
     },
     methods: {
-      createTask() {
-        this.tasks.push({
-          description: this.new_task,
-          pending: true,
-          editing: false
-        });
-
-        this.new_task = '';
-      },
-      deleteTask(index) {
-        this.tasks.splice(index, 1);
+      createTask(task) {
+        this.tasks.push(task);
       },
       deleteCompleted() {
         this.tasks = this.tasks.filter(task => task.pending);
+      },
+      alertTask(task) {
+        alert(task.description);
       }
     }
   }
