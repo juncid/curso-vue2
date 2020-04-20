@@ -1,5 +1,5 @@
 <template>
-  <li class="list-group-item"
+  <li class="list-group-item task-list-item"
       :class="{editing: editing, completed: !task.pending}">
     <a @click="toggleStatus">
       <app-icon :img="task.pending ? 'unchecked': 'check'"></app-icon>
@@ -76,3 +76,51 @@
       },
     };
 </script>
+
+<style lang="scss">
+  .task-list-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    a {
+      text-decoration: none;
+    }
+
+    &.editing {
+      box-shadow: inset 0 0 5px #999;
+    }
+
+    input {
+      flex: 1;
+      padding: 0 5px;
+    }
+  }
+
+  .tasks-list-item .description {
+    flex: 1;
+    padding: 0 5px;
+  }
+
+  .task-list-item {
+    input {
+      border: 0;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &.completed {
+      color: #999;
+
+      a {
+        color: #999;
+      }
+
+      .description {
+        text-decoration: line-through;
+      }
+    }
+  }
+</style>

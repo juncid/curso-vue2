@@ -12,10 +12,7 @@
     <h4>Imprimir</h4>
     <app-task-form @created="alertTask"></app-task-form>
 
-
-    <footer class="footer">
-      <p>&copy; 2020 Juan Cid</p>
-    </footer>
+    <app-footer></app-footer>
   </div>
 </template>
 
@@ -23,11 +20,13 @@
 
   import TaskList from './TaskList/TaskList'
   import TaskForm from './TaskForm/TaskForm'
+  import AppFooter from './Footer/Footer'
 
   export default {
     components: {
       'app-task-list': TaskList,
-      'app-task-form': TaskForm
+      'app-task-form': TaskForm,
+      'app-footer': AppFooter
     },
     created() {
       this.tasks.forEach((task, index) =>{
@@ -50,16 +49,6 @@
             description: 'Grabar lección de Vue',
             pending: false
           }
-        ],
-        tasks2: [
-          {
-            description: 'Aprender Vue 2',
-            pending: true
-          },
-          {
-            description: 'Subscribirse a Styde',
-            pending: true
-          }
         ]
       }
     },
@@ -78,30 +67,20 @@
 </script>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  body {
+    margin: 10px;
+  }
 
-h1, h2 {
-  font-weight: normal;
-}
+  .container {
+    max-width: 650px;
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
+    h2 {
+      max-width: 650px;
+    }
 
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
+  }
 
-a {
-  color: #42b983;
-}
+  .m-bottom{
+    margin-bottom: 15px;
+  }
 </style>

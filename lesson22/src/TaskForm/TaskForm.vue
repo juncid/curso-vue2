@@ -25,3 +25,13 @@
         }
     };
 </script>
+
+<style lang="scss">
+  .new-task-form {
+    display: flex;
+
+    input {
+      margin-right: 10px;
+    }
+  }
+</style>
