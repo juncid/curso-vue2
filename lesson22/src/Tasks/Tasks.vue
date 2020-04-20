@@ -41,40 +41,38 @@
         },
         template: '#task-template',
         props:['task', 'index'],
-        data: function (){
+        data(){
           return {
             editing: false,
             draft: ''
           };
         },
         methods: {
-        toggleStatus: function () {
+        toggleStatus() {
           this.task.pending = !this.task.pending;
         },
-        edit: function () {
-          console.log('Editing ' + this.index);
+        edit() {
           EventBus.$emit('editing', this.index);
           this.draft = this.task.description;
           this.editing = true;
         },
-        update: function () {
+        update() {
           this.task.description = this.draft;
           this.editing = false;
         },
-        discard: function () {
+        discard() {
           this.editing = false;
         },
-        remove: function () {
+        remove() {
           this.$emit('remove', this.index);
         }
       },
-        created: function() {
-        EventBus.$on('editing', function (index) {
+        created() {
+        EventBus.$on('editing', (index) => {
           if(this.index != index) {
-            console.log('Discarding '+this.index);
             this.discard();
           }
-        }.bind(this));
+        });
       },
     };
 </script>

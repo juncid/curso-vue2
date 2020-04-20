@@ -3,8 +3,9 @@
     <h2>Tareas</h2>
 
     <ul class="list-group tasks">
-      <li is="app-task" v-for="(task, index) in tasks"
-          :tasks="tasks" :task="task" :index="index" @remove="deleteTask"></li>
+      <app-task v-for="(task, index) in tasks" :key="task.id"
+                :tasks="tasks" :task="task" :index="index" @remove="deleteTask">
+      </app-task>
     </ul>
     <button class="btn btn-success m-bottom" @click="deleteCompleted">Eliminar tareas completadas</button>
     <br>
@@ -26,30 +27,32 @@
     components: {
       'app-task': Task
     },
-    data: function () {
+    created() {
+      this.tasks.forEach((task, index) =>{
+        this.$set(task, 'id', index + 1)
+      });
+    },
+    data() {
       return {
         new_task: '',
         tasks: [
           {
             description: 'Aprender Vue.js',
-            pending: true,
-            editing: false
+            pending: true
           },
           {
             description: 'Subscribirse a Styde.net',
-            pending: true,
-            editing: false
+            pending: true
           },
           {
             description: 'Grabar lección de Vue',
-            pending: false,
-            editing: false
+            pending: false
           }
         ]
       }
     },
     methods: {
-      createTask: function () {
+      createTask() {
         this.tasks.push({
           description: this.new_task,
           pending: true,
@@ -58,13 +61,11 @@
 
         this.new_task = '';
       },
-      deleteTask: function(index) {
+      deleteTask(index) {
         this.tasks.splice(index, 1);
       },
-      deleteCompleted: function () {
-        this.tasks = this.tasks.filter(function (task) {
-          return task.pending;
-        });
+      deleteCompleted() {
+        this.tasks = this.tasks.filter(task => task.pending);
       }
     }
   }
