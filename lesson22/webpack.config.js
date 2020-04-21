@@ -2,6 +2,9 @@ var path = require('path');
 const glob = require('glob');
 var webpack = require('webpack');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+var PurifyCSSPlugin = require('purifycss-webpack');
+
+const inProduction = process.env.NODE_ENV === 'production';
 
 module.exports = {
   entry: './src/main.js',
@@ -73,6 +76,12 @@ module.exports = {
   },
   plugins: [
     new ExtractTextPlugin("style.css"),
+    new PurifyCSSPlugin({
+      paths: glob.sync(path.join(__dirname, 'src/**/*.vue')),
+      purifyOptions: {
+        minify: inProduction
+      }
+    }),
   ],
   resolve: {
     alias: {
@@ -91,7 +100,7 @@ module.exports = {
   devtool: '#eval-source-map'
 }
 
-if (process.env.NODE_ENV === 'production') {
+if (inProduction) {
   module.exports.devtool = '#source-map'
   // http://vue-loader.vuejs.org/en/workflow/production.html
   module.exports.plugins = (module.exports.plugins || []).concat([

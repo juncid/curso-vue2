@@ -32,8 +32,8 @@
 </template>
 
 <script>
-  import EventBus from '../event-bus'
-  import Icon from '../Icon/Icon'
+  import EventBus from '../../../event-bus'
+  import Icon from '../../Icon/Icon'
 
   export default {
         components : {

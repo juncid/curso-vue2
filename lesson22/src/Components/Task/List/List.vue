@@ -1,17 +1,17 @@
 <template>
   <ul class="list-group tasks-list">
-    <app-task v-for="(task, index) in tasks" :key="task.id"
+    <task v-for="(task, index) in tasks" :key="task.id"
               :tasks="tasks" :task="task" :index="index" @remove="deleteTask">
-    </app-task>
+    </task>
   </ul>
 </template>
 
 <script>
-    import Task from '../Tasks/Tasks'
+    import Task from '../ListItem/ListItem'
 
     export default {
         components: {
-          'app-task': Task
+          'task': Task
         },
         props: ['tasks'],
         methods: {
