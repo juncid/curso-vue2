@@ -12,34 +12,17 @@
 <script>
   import TaskList from './List/List'
   import TaskForm from './CreateForm/CreateForm'
+  import store from '../../store/'
 
   export default {
     components: {
       'task-list': TaskList,
       'task-form': TaskForm
     },
-    created() {
-      this.tasks.forEach((task, index) =>{
-        this.$set(task, 'id', index + 1)
-      });
-    },
     data() {
       return {
         new_task: '',
-        tasks: [
-          {
-            description: 'Aprender Vue.js',
-            pending: true
-          },
-          {
-            description: 'Subscribirse a Styde.net',
-            pending: true
-          },
-          {
-            description: 'Grabar lección de Vue',
-            pending: false
-          }
-        ]
+        tasks: store.state.tasks
       }
     },
     methods: {

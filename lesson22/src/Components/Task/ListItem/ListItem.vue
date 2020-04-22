@@ -1,33 +1,10 @@
 <template>
-  <li class="list-group-item task-list-item"
-      :class="{editing: editing, completed: !task.pending}">
-    <a @click="toggleStatus">
+  <li @click="select" class="list-group-item task-list-item"
+      :class="{completed: !task.pending}">
+    <a @click.stop="toggleStatus">
       <app-icon :img="task.pending ? 'unchecked': 'check'"></app-icon>
     </a>
-
-    <template v-if="!editing">
-      <span class="description">{{ task.description }}</span>
-      <div>
-        <a @click="edit">
-          <app-icon img="edit"></app-icon>
-        </a>
-        <a @click="remove">
-          <app-icon img="trash"></app-icon>
-        </a>
-      </div>
-    </template>
-
-    <template v-else>
-      <input  type="text" v-model="draft">
-      <div>
-        <a @click="update">
-          <app-icon img="ok"></app-icon>
-        </a>
-        <a @click="discard">
-          <app-icon img="remove"></app-icon>
-        </a>
-      </div>
-    </template>
+    <span class="description">{{ task.title }}</span>
   </li>
 </template>
 
@@ -43,7 +20,6 @@
         props:['task', 'index'],
         data(){
           return {
-            editing: false,
             draft: ''
           };
         },
@@ -51,29 +27,10 @@
         toggleStatus() {
           this.task.pending = !this.task.pending;
         },
-        edit() {
-          EventBus.$emit('editing', this.index);
-          this.draft = this.task.description;
-          this.editing = true;
-        },
-        update() {
-          this.task.description = this.draft;
-          this.editing = false;
-        },
-        discard() {
-          this.editing = false;
-        },
-        remove() {
-          this.$emit('remove', this.index);
+        select()  {
+          this.$router.push('/tasks/' + this.task.id)
         }
-      },
-        created() {
-        EventBus.$on('editing', (index) => {
-          if(this.index != index) {
-            this.discard();
-          }
-        });
-      },
+      }
     };
 </script>
 
@@ -87,29 +44,14 @@
       text-decoration: none;
     }
 
-    &.editing {
-      box-shadow: inset 0 0 5px #999;
-    }
-
-    input {
-      flex: 1;
-      padding: 0 5px;
-    }
   }
 
-  .tasks-list-item .description {
+  .task-list-item .description {
     flex: 1;
     padding: 0 5px;
   }
 
   .task-list-item {
-    input {
-      border: 0;
-
-      &:focus {
-        outline: none;
-      }
-    }
 
     &.completed {
       color: #999;

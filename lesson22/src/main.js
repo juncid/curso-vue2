@@ -1,6 +1,21 @@
 import Vue from 'vue'
 import App from './Components/App.vue'
 import router from './router/index'
+import EventBus from './event-bus'
+
+window.EventBus = EventBus;
+
+window.not_found = function () {
+  console.log('Not found:'+ router.currentRoute.fullPath);
+
+  router.replace('/404');
+};
+
+window.not_found_unless = function (condition) {
+  if(!condition) {
+    not_found();
+  }
+};
 
 new Vue({
   el: '#app',
