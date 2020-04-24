@@ -1,23 +1,36 @@
 <template>
-  <div>
-    <h2>Tareas</h2>
-    <task-list :tasks="tasks"></task-list>
+  <div class="row">
+    <div class="col-xs-6 col-md-6">
+      <div class="top">
+        <h2>Tareas</h2>
+        <router-link :to="{name: 'tasks.create'}" >Nueva tarea </router-link>
+      </div>
 
-    <button class="btn btn-success m-bottom" @click="deleteCompleted">Eliminar tareas completadas</button>
+      <ul class="list-group tasks-list">
+        <task-item v-for="(task, index) in tasks" :key="task.id" :task="task">
+        </task-item>
+      </ul>
+    </div>
 
-    <task-form @created="createTask"></task-form>
+    <div class="col-xs-6 col-md-6">
+      <router-view></router-view>
+    </div>
+
+
   </div>
 </template>
 
 <script>
-  import TaskList from './List/List'
+
+  import TaskItem from './ListItem/ListItem'
   import TaskForm from './CreateForm/CreateForm'
   import store from '../../store/'
 
+
   export default {
     components: {
-      'task-list': TaskList,
-      'task-form': TaskForm
+      'task-form': TaskForm,
+      'task-item': TaskItem
     },
     data() {
       return {
@@ -31,10 +44,20 @@
       },
       deleteCompleted() {
         this.tasks = this.tasks.filter(task => task.pending);
-      },
-      alertTask(task) {
-        alert(task.description);
       }
     }
   }
 </script>
+
+<style lang="scss">
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .tasks-list {
+    margin-bottom: 40px;
+  }
+</style>

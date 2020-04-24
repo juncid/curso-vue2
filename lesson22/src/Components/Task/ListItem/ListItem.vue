@@ -1,6 +1,6 @@
 <template>
   <li @click="select" class="list-group-item task-list-item"
-      :class="{completed: !task.pending}">
+      :class="{active: isActive,completed: !task.pending}">
     <a @click.stop="toggleStatus">
       <app-icon :img="task.pending ? 'unchecked': 'check'"></app-icon>
     </a>
@@ -9,26 +9,33 @@
 </template>
 
 <script>
-  import EventBus from '../../../event-bus'
-  import Icon from '../../Icon/Icon'
+  import store from '../../../store/index'
+  import Icon from "../../Icon/Icon";
 
   export default {
-        components : {
-          'app-icon': Icon
-        },
-        template: '#task-template',
-        props:['task', 'index'],
-        data(){
-          return {
-            draft: ''
-          };
-        },
-        methods: {
+    components: {
+      'app-icon': Icon
+    },
+    props:['task'],
+    data(){
+      return {
+        draft: ''
+      };
+    },
+    computed: {
+          isActive() {
+          return this.task.id == this.$route.params.id;
+          }
+    },
+    methods: {
         toggleStatus() {
-          this.task.pending = !this.task.pending;
+          store.toggleTask(this.task);
         },
         select()  {
-          this.$router.push('/tasks/' + this.task.id)
+          let route = this.isActive
+            ? {name: 'tasks'}
+            : {name: 'tasks.details', params: {id: this.task.id}};
+          this.$router.push(route)
         }
       }
     };
@@ -64,5 +71,10 @@
         text-decoration: line-through;
       }
     }
+
+    &.active a, &.active{
+      color: #ffffff;
+    }
+
   }
 </style>

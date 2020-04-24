@@ -2,8 +2,8 @@
   <div id="app" class="container">
 
     <ul class="nav nav-tabs">
-      <router-link tag="li" to="/" exact-active-class="active"><a>Dashboard</a></router-link>
-      <router-link tag="li" to="/tasks" active-class="active"><a>Tareas</a></router-link>
+      <router-link tag="li" :to="{name:'dashboard'}" exact-active-class="active"><a>Dashboard</a></router-link>
+      <router-link tag="li" :to="{name: 'tasks'}" active-class="active"><a>Tareas</a></router-link>
     </ul>
 
     <keep-alive>
@@ -31,7 +31,7 @@
   }
 
   .container {
-    max-width: 650px;
+    max-width: 920px;
 
     h2 {
       max-width: 650px;

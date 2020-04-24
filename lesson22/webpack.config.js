@@ -75,7 +75,10 @@ module.exports = {
     ]
   },
   plugins: [
-    new ExtractTextPlugin("style.css"),
+    new ExtractTextPlugin({
+      filename: "style.css",
+      disable: !inProduction
+    }),
     new PurifyCSSPlugin({
       paths: glob.sync(path.join(__dirname, 'src/**/*.vue')),
       purifyOptions: {

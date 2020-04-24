@@ -1,40 +1,50 @@
 <template>
   <div>
     <h2>Nueva Tarea:</h2>
-    <form @submit.prevent="created" class="new-task-form">
-      <input v-model="draft" type="text" class="form-control">
+    <form @submit.prevent="created" >
+
+      <div class="form-group">
+        <label for="title">Título</label>
+        <input type="text" v-model="task.title" class="form-control" id="title">
+      </div>
+
+      <div class="form-group">
+        <label for="description">Descripción</label>
+        <textarea name="" id="description" cols="30" rows="6" v-model="task.description"
+                  class="form-control"></textarea>
+      </div>
+
       <button class="btn btn-primary">Crear tarea</button>
     </form>
   </div>
 </template>
 
 <script>
+  import store from '../../../store/index'
+
     export default {
         data(){
           return {
-            draft: ''
+            task: {
+              id: '',
+              title: '',
+              description: '',
+              pending: true
+            }
           }
         },
         methods: {
           created() {
-            this.$emit('created', {
-              description: this.draft,
-              pending: true,
-              editing: false
-            });
+            store.createTask(this.task);
 
-            this.draft = '';
+            this.$router.push({
+              name: 'tasks.details',
+              params: {id: this.task.id}
+            });
           },
         }
     };
 </script>
 
 <style lang="scss">
-  .new-task-form {
-    display: flex;
-
-    input {
-      margin-right: 10px;
-    }
-  }
 </style>
