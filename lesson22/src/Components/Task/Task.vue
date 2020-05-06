@@ -10,7 +10,11 @@
         <task-item v-for="(task, index) in tasks" :key="task.id" :task="task">
         </task-item>
       </ul>
+
+      <button class="btn btn-success" @click="deleteCompleted">Eliminar tareas completadas</button>
     </div>
+
+
 
     <div class="col-xs-6 col-md-6">
       <router-view></router-view>
@@ -28,22 +32,16 @@
 
 
   export default {
+    computed: {
+      tasks:() => store.state.tasks
+    },
     components: {
       'task-form': TaskForm,
       'task-item': TaskItem
     },
-    data() {
-      return {
-        new_task: '',
-        tasks: store.state.tasks
-      }
-    },
     methods: {
-      createTask(task) {
-        this.tasks.push(task);
-      },
       deleteCompleted() {
-        this.tasks = this.tasks.filter(task => task.pending);
+        store.deleteCompletedTasks();
       }
     }
   }

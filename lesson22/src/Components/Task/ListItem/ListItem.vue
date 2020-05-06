@@ -73,7 +73,7 @@
     }
 
     &.active a, &.active{
-      color: #ffffff;
+      color: #ffffff !important;
     }
 
   }

@@ -28,27 +28,16 @@
   import Icon from "../../Icon/Icon";
 
     export default {
+      props: ['id'],
+      computed: {
+        task() {
+          return store.findTask(this.id);
+        }
+      },
       components: {
         'app-icon': Icon
       },
-      props: ['id'],
-      data() {
-        return {
-          task: null
-        }
-      },
-      created() {
-        this.findTask();
-      },
-      watch : {
-        id: 'findTask'
-      },
       methods : {
-        findTask() {
-          this.task = store.findTask(this.id);
-
-          not_found_unless(this.task);
-        },
         toggleStatusTask() {
           store.toggleTask(this.task);
         },

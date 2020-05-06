@@ -1,40 +1,35 @@
-let tasks = [
-  {
-    title: 'Aprender Vue.js',
-    pending: true
-  },
-  {
-    title: 'Subscribirse a Styde.net',
-    pending: true
-  },
-  {
-    title: 'Grabar lección de Vue',
-    pending: false
-  }
-];
+import Vue from 'vue'
 
-tasks.forEach((task, index) => {
-  task.id = index + 1;
+import tasks from './tasks'
 
-  task.description = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
-  ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-  ex ea commodo consequat.`
+let state = {
+  tasks
+};
 
+new Vue({
+  data: state
 });
 
 export default {
-  state: {
-    tasks
-  },
+  state,
   findTask(id) {
-    return this.state.tasks.find(
-      task => task.id == id)
-  },
-  createTask(task) {
-    task.id =this.state.tasks.length +1;
+    let task = this.state.tasks.find(task => task.id == id);
 
-    this.state.tasks.push(task);
+    not_found_unless(task);
+
+    return task;
+  },
+  createTask({title, description}) {
+    let newTask = {
+      id: this.state.tasks.length +1,
+      title,
+      description,
+      pending: true
+    };
+
+    this.state.tasks.push(newTask);
+
+    return newTask;
   },
   toggleTask(task){
     task.pending = !task.pending;
@@ -43,10 +38,12 @@ export default {
     let index = this.state.tasks.findIndex(task => task.id == id);
     this.state.tasks.splice(index, 1, task )
   },
-
   deleteTask(id) {
     let index = this.state.tasks.findIndex(task => task.id == id);
 
     this.state.tasks.splice(index, 1);
+  },
+  deleteCompletedTasks() {
+    this.state.tasks = this.state.tasks.filter(task => task.pending);
   }
 }

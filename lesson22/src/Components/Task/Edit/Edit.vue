@@ -1,30 +1,30 @@
-<template>
-  <div v-if="task">
-    <h2>Editar Tarea</h2>
-    <form @submit.prevent="update" >
-
-      <div class="form-group">
-        <label for="title">Título</label>
-        <input type="text" v-model="task.title" class="form-control" id="title">
-      </div>
-
-      <div class="form-group">
-        <label for="description">Descripción</label>
-        <textarea name="" id="description" cols="30" rows="6" v-model="task.description"
-                  class="form-control"></textarea>
-      </div>
-
-      <button class="btn btn-success">Editar tarea</button>
-      <button @click="$router.push({name:'tasks'})" class="btn btn-danger">Cancelar</button>
-    </form>
-  </div>
-</template>
-
 <script>
   import store from '../../../store/index'
+  import Form from "../Form/Form";
+  import Loader from "../../Loader/Loader"
 
    export default {
         props: ['id'],
+        render(createElement){
+
+          if (!this.task) {
+            return createElement(Loader);
+          }
+
+         return createElement(Form, {
+            props: {
+              title: 'Editar Tarea',
+              action: 'Actualizar tarea',
+              task: this.task,
+              edit: true
+            },
+            on: {
+              save: this.update
+            }
+          });
+
+        },
+
         data() {
           return {
             task: null
@@ -38,12 +38,14 @@
         },
         methods: {
           findTask() {
-            this.task = clone(store.findTask(this.id));
+            setTimeout(()=>{
+              this.task = clone(store.findTask(this.id));
 
-            not_found_unless(this.task);
+              not_found_unless(this.task);
+            }, 1500);
           },
-          update() {
-            store.updateTask(this.id, this.task);
+          update(draft) {
+            store.updateTask(this.id, draft);
 
             this.$router.push({
               name: 'tasks.details',

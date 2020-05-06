@@ -12,47 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lesson22/src/Components/Task/Edit/Edit.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lesson22/src/Components/Task/Details/Details.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="582">
-              <caret line="72" column="35" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lesson22/src/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lesson22/src/store/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="815">
-              <caret line="43" column="43" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -107,21 +67,24 @@
         <option value="$PROJECT_DIR$/lesson22/src/Components/App.vue" />
         <option value="$PROJECT_DIR$/lesson22/src/Components/Task/List/List.vue" />
         <option value="$PROJECT_DIR$/lesson22/webpack.config.js" />
-        <option value="$PROJECT_DIR$/lesson22/src/Components/Task/Task.vue" />
-        <option value="$PROJECT_DIR$/lesson22/src/Components/Task/CreateForm/CreateForm.vue" />
-        <option value="$PROJECT_DIR$/lesson22/src/store/index.js" />
-        <option value="$PROJECT_DIR$/lesson22/src/main.js" />
         <option value="$PROJECT_DIR$/lesson22/src/router/index.js" />
-        <option value="$PROJECT_DIR$/lesson22/src/Components/Task/ListItem/ListItem.vue" />
-        <option value="$PROJECT_DIR$/lesson22/src/Components/Task/Details/Details.vue" />
+        <option value="$PROJECT_DIR$/lesson22/src/Components/Loader/Loader.vue" />
+        <option value="$PROJECT_DIR$/lesson22/src/Components/Task/Form/Form.vue" />
         <option value="$PROJECT_DIR$/lesson22/src/Components/Task/Edit/Edit.vue" />
+        <option value="$PROJECT_DIR$/lesson22/src/main.js" />
+        <option value="$PROJECT_DIR$/lesson22/src/store/tasks.js" />
+        <option value="$PROJECT_DIR$/lesson22/src/Components/Task/Task.vue" />
+        <option value="$PROJECT_DIR$/lesson22/src/Components/Task/ListItem/ListItem.vue" />
+        <option value="$PROJECT_DIR$/lesson22/src/Components/Task/CreateForm/CreateForm.vue" />
+        <option value="$PROJECT_DIR$/lesson22/src/Components/Task/Details/Details.vue" />
+        <option value="$PROJECT_DIR$/lesson22/src/store/index.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="625" />
-    <option name="y" value="51" />
-    <option name="width" value="693" />
+    <option name="y" value="1" />
+    <option name="width" value="697" />
     <option name="height" value="734" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -130,7 +93,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -180,10 +142,18 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="router" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="curso-vue2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="curso-vue2" type="462c0819:PsiDirectoryNode" />
+              <item name="lesson22" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -237,12 +207,15 @@
       <workItem from="1587177004455" duration="39015000" />
       <workItem from="1587570434211" duration="12743000" />
       <workItem from="1587661335447" duration="7170000" />
-      <workItem from="1587749275707" duration="11754000" />
+      <workItem from="1587749275707" duration="17960000" />
+      <workItem from="1588100005407" duration="594000" />
+      <workItem from="1588199482918" duration="1197000" />
+      <workItem from="1588263517875" duration="6445000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88244000" />
+    <option name="totallyTimeSpent" value="102686000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -254,19 +227,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="625" y="51" width="693" height="734" extended-state="0" />
-    <editor active="true" />
+    <frame x="625" y="1" width="697" height="734" extended-state="0" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" weight="0.47633588" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.47496206" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.24886191" />
       <window_info anchor="bottom" id="GraphQL" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" weight="0.52347827" />
-      <window_info anchor="bottom" id="Version Control" order="2" weight="0.3298611" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.52307695" />
+      <window_info anchor="bottom" id="Version Control" order="2" weight="0.32869565" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.32869565" />
       <window_info anchor="bottom" id="Run" order="7" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
@@ -278,11 +250,11 @@
     </layout>
     <layout-to-restore>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.5098336" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.47633588" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.24886191" />
       <window_info anchor="bottom" id="GraphQL" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.3298611" />
-      <window_info anchor="bottom" id="Version Control" order="2" weight="0.3298611" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.52347827" />
+      <window_info anchor="bottom" id="Version Control" order="2" weight="0.32869565" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
@@ -341,23 +313,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Leccion12/start.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="85" lean-forward="true" selection-end-line="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/ide/ide-scripting.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="101" selection-start-line="101" selection-end-line="101" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Leccion12/end.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
@@ -597,47 +552,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lesson22/src/store/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="815">
-          <caret line="43" column="43" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lesson22/src/Components/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lesson22/src/Components/Task/ListItem/ListItem.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1848">
-          <caret line="77" selection-start-line="77" selection-end-line="78" />
-          <folding>
-            <element signature="e#333#373#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lesson22/src/Components/Task/CreateForm/CreateForm.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-929">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lesson22/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lesson22/src/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="382">
@@ -648,27 +562,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lesson22/src/Components/Task/Task.vue">
+    <entry file="file://$PROJECT_DIR$/lesson22/src/Components/Loader/Loader.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1392">
-          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+        <state relative-caret-position="288">
+          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lesson22/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
           <folding>
-            <element signature="e#489#531#0" expanded="true" />
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lesson22/src/Components/Task/Edit/Edit.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#11#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lesson22/src/Components/Task/Form/Form.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="18" column="56" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lesson22/src/Components/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lesson22/src/Components/Task/ListItem/ListItem.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="75" column="32" lean-forward="true" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="32" />
+          <folding>
+            <element signature="e#333#373#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lesson22/src/Components/Task/CreateForm/CreateForm.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <folding>
+            <element signature="e#11#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lesson22/src/store/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lesson22/src/Components/Task/Details/Details.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="582">
-          <caret line="72" column="35" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
+        <state relative-caret-position="274">
+          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lesson22/src/Components/Task/Edit/Edit.vue">
+    <entry file="file://$PROJECT_DIR$/lesson22/src/store/tasks.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="499">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lesson22/src/Components/Task/Task.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="43" column="37" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
+          <folding>
+            <element signature="e#489#531#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
