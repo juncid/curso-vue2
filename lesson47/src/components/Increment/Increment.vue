@@ -1,17 +1,10 @@
 <template>
-    <div>
-      <button @click="increment" class="btn btn-primary">Incrementar</button>
-    </div>
+  <button @click="increment" class="btn btn-primary">Incrementar</button>
 </template>
 
 <script>
-  import store from '../../store';
-
+  import {mapMutations} from 'vuex'
     export default {
-        methods: {
-          increment() {
-            store.commit('increment')
-          }
-        }
+        methods: mapMutations(['increment'])
     };
 </script>
