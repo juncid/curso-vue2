@@ -29,7 +29,7 @@
     },
     methods: {
         toggleStatus() {
-          store.toggleTask(this.task);
+          store.dispatch('toggleTask', this.task);
         },
         select()  {
           let route = this.isActive

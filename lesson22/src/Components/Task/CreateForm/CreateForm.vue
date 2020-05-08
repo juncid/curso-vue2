@@ -8,17 +8,19 @@
               props: {
                   title: 'Nueva tarea',
                   action: 'Crear tarea',
-                  task: {}
+                  task: {
+                    title: '',
+                    description: ''
+                  }
               },
               on: {
                 save: (draft) => {
-                    let newTask = store.createTask(draft);
-
-                    this.$router.push({
+                    store.dispatch('createTask', draft).then( newTask => {
+                      this.$router.push({
                         name: 'tasks.details',
                         params: {id: newTask.id}
-                });
-
+                      });
+                    });
               }
             }
           });
